@@ -1,5 +1,5 @@
-# xcalc
-Simple Calculator with Python GUI (TK)is a vanity Python project by Ebenezer Obasi (www.eobasi.com).
+# Simple Calculator with Python GUI (TK)
+Simple Calculator with Python GUI (TK) is a vanity Python project by Ebenezer Obasi (www.eobasi.com).
 It should enable you do basic calculation such as addition, subtraction, multiplication and division, but should it fail, just know it's my first Python GUI program.
 
 See my motivation here >> http://www.eobasi.com/first-python-gui-progam-xcalc
