@@ -180,7 +180,7 @@ box.mainloop()
 ```
 I will further break down the codes into various components.
 
-(Shabang)[https://en.wikipedia.org/wiki/Shebang_(Unix)] line `#!/usr/bin/python3` at the begginig of the code defines where the interpreter is located. In this case, the python3 interpreter is located in `/usr/bin/python3`. A shebang line could also be a bash, ruby, perl or any other scripting languages' interpreter, for example: `#!/bin/bash`.
+[Shabang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line `#!/usr/bin/python3` at the begginig of the code defines where the interpreter is located. In this case, the python3 interpreter is located in `/usr/bin/python3`. A shebang line could also be a bash, ruby, perl or any other scripting languages' interpreter, for example: `#!/bin/bash`.
 
 Without the shebang line, the operating system does not know it's a python script, even if you set the execution flag on the script and run it like `./script.py`. To make the script run by default in python3, either invoke it as `python3 script.py` or set the shebang line.
 
