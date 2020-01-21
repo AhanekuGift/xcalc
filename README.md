@@ -189,3 +189,13 @@ The [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line `#!/usr/bin/pyt
 A shebang line could also be a bash, ruby, perl or any other scripting languages' interpreter, for example: `#!/bin/bash`. Without the shebang line, the operating system does not know it's a python script, even if you set the execution flag on the script and run it like `./script.py`. To make the script run by default in python3, either invoke it as `python3 script.py` or set the shebang line.
 
 You can use `#!/usr/bin/env python3` for portability across different systems in case they have the language interpreter installed in different locations.
+
+### Python Tkinter GUI Toolkit
+
+[Tkinter](https://en.wikipedia.org/wiki/Tkinter) is Python's de facto standard GUI. We are going to import the module into our Python program to create interactive graphic user interface for our calculator.
+
+```python
+import tkinter
+import tkinter.messagebox
+```
+The `import` keyword is used to import a module in Python. We have imported `tkinter` and `tkinter.messagebox` into our program. If you are running Python3 on Ubuntu and tkinter is not installed, run the following command in your terminal: `sudo apt-get install python3-tk`
