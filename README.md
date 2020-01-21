@@ -3,9 +3,10 @@ Simple Calculator with Python GUI (TK) is a vanity Python project I developed. I
 
 See my motivation here >> http://www.eobasi.com/first-python-gui-progam-xcalc
 
-If you happen to find this program or the source code useful, feel free to use as you see fit with or without attribution.
+## Xcalc Source Code
+This code documentation is intended to help you understand, use and modify Xcode if you are new to Python programming. The program is written in good will, in the spirit of open source. If you happen to find this program or the source code useful, feel free to use as you see fit with or without attribution.
 
-# Simple Calculator with Python GUI (Xcalc) Source Code
+Xcalc is written with Python3. With a few adjustment to the code, you can have it working on Python 2 as well.
 
 ```python
 #!/usr/bin/python3
@@ -177,5 +178,10 @@ generateBtn(dispalyArea, label='clear', grid={ "column":3, "row":0, "columnspan"
 box.config(menu=menubar())
 box.mainloop()
 ```
+I will further break down the codes into various components.
 
+(Shabang)[https://en.wikipedia.org/wiki/Shebang_(Unix)] line `#!/usr/bin/python3` at the begginig of the code defines where the interpreter is located. In this case, the python3 interpreter is located in `/usr/bin/python3`. A shebang line could also be a bash, ruby, perl or any other scripting languages' interpreter, for example: `#!/bin/bash`.
 
+Without the shebang line, the operating system does not know it's a python script, even if you set the execution flag on the script and run it like `./script.py`. To make the script run by default in python3, either invoke it as `python3 script.py` or set the shebang line.
+
+You can use `#!/usr/bin/env python3` for portability across different systems in case they have the language interpreter installed in different locations.
