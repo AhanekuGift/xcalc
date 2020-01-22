@@ -238,15 +238,71 @@ Set calculator window width.
 ```python
 WIN_HEIGHT = 420
 ```
-
 Set calculator window height.
+
 ```python
 NUM_COLUMN_COUNT = 3
 ```
 Configure number of buttons per row on the numbers column.
 
-Set calculator window height.
 ```python
 OPERATOR_COLUMN_COUNT = 3
 ```
 Configure number of buttons per row on the operator column.
+
+```python
+BTN_WIDTH = 4
+```
+Set button width
+
+```python
+BTN_HEIGTH = 3
+```
+Set button height
+
+```python
+BTN_FONT = ("Arial", 14)
+```
+Set button font family (Arial) and font size.
+
+```python
+DISPLAY_HEIGHT = 3
+```
+Configure display box height.
+
+```python
+DISPLAY_WIDTH = 20
+```
+Configure display box width.
+
+```python
+DISPLAY_FONT = ("Arial", 18)
+```
+Configure display box font family (Arial) and font size (18).
+
+```python
+DISPLAY_SM_FONT = ("Arial", 14)
+```
+Configure display box font family (Arial) and font size (14) for longer characters.
+
+```python
+DISPLAY_CHAR_LIMIT = 20
+```
+Limit of characters in the calculator display box.
+
+### Xcalc Variables
+
+```python
+numpad = [1,2,3,4,5,6,7,8,9,0, '.']
+operators = ['+','-', '/', '*', '=']
+```
+
+The `numpad` constant list numbers from 1-9-0 and dot (.) as the last item on the list. This constant is used to generate button for the calculator number column.
+
+`operators` list operators for conducting arithmethic operations. Listed operetors include:
+* Addition (`+`)
+* Subtraction (`-`)
+* Division (`/`)
+* Multiplication (`*`)
+* Equals (=)
+* Using the floor operator (`//`) in the calculator will display the remainder of a number devided by another number.
