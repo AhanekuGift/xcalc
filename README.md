@@ -1,7 +1,7 @@
 # Xcalc - Simple Calculator with Python GUI (TK)
 Simple Calculator with Python GUI (TK) is [my vanity Python project](http://www.eobasi.com/first-python-gui-progam-xcalc). It should enable you do basic calculation such as addition, subtraction, multiplication and division, but should it fail, just know it's my first Python GUI program.
 
-See my motivation here >> http://www.eobasi.com/first-python-gui-progam-xcalc
+See my motivation here >> [http://www.eobasi.com/first-python-gui-progam-xcalc](http://www.eobasi.com/first-python-gui-progam-xcalc)
 
 ## Xcalc Source Code
 This code documentation is intended to help you understand, use and modify Xcode if you are new to Python programming. The program is written in good will, in the spirit of open source. If you happen to find this program or the source code useful, feel free to use as you see fit with or without attribution.
@@ -204,10 +204,21 @@ The `import` keyword is used to import a module in Python. We have imported `tki
 
 ```python
 box = tkinter.Tk()
+
 ...
+
+box.configure(background = "#3c4248")
+box.title("Simple Calculator")
+box.geometry("{}x{}".format(WIN_WIDTH, WIN_HEIGHT))
+box.minsize(width=WIN_WIDTH, height=WIN_HEIGHT)
+box.maxsize(width=WIN_WIDTH, height=WIN_HEIGHT)
+
+...
+
+box.config(menu=menubar())
 box.mainloop()
 ```
-`box = tkinter.Tk()` initialize the TK module. This allows us to use TK functions within our program.
+`box = tkinter.Tk()` initialize the TK module in a variable `box`. This allows us to use TK functions within our program. See [Graphical User Interfaces with Tk](https://docs.python.org/3/library/tk.html) on how to use the TK library in Python.
 
 ### Configure Xcalc
 ```python
