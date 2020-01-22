@@ -241,65 +241,66 @@ DISPLAY_CHAR_LIMIT = 20
 ```
 The use of variables within Xcalc functions means that you can customize the calculator properties without edition the code functions.
 
+#### WIN_WIDTH
+Set calculator window width.
 ```python
 WIN_WIDTH = 360
 ```
-Set calculator window width.
-
+#### WIN_HEIGHT
+Set calculator window height.
 ```python
 WIN_HEIGHT = 420
 ```
-Set calculator window height.
-
+#### NUM_COLUMN_COUNT
+Configure number of buttons per row on the numbers column.
 ```python
 NUM_COLUMN_COUNT = 3
 ```
-Configure number of buttons per row on the numbers column.
-
+#### OPERATOR_COLUMN_COUNT
+Configure number of buttons per row on the operator column.
 ```python
 OPERATOR_COLUMN_COUNT = 3
 ```
-Configure number of buttons per row on the operator column.
-
+#### BTN_WIDTH
+Set button width
 ```python
 BTN_WIDTH = 4
 ```
-Set button width
-
+#### BTN_HEIGTH
+Set button height
 ```python
 BTN_HEIGTH = 3
 ```
-Set button height
-
+#### BTN_FONT
+Set button font family (Arial) and font size.
 ```python
 BTN_FONT = ("Arial", 14)
 ```
-Set button font family (Arial) and font size.
-
+#### DISPLAY_HEIGHT
+Configure display box height.
 ```python
 DISPLAY_HEIGHT = 3
 ```
-Configure display box height.
-
+#### DISPLAY_WIDTH
+Configure display box width.
 ```python
 DISPLAY_WIDTH = 20
 ```
-Configure display box width.
-
+#### DISPLAY_FONT
+Configure display box font family (Arial) and font size (18).
 ```python
 DISPLAY_FONT = ("Arial", 18)
 ```
-Configure display box font family (Arial) and font size (18).
-
+#### DISPLAY_SM_FONT
+Configure display box font family (Arial) and font size (14) for longer characters.
 ```python
 DISPLAY_SM_FONT = ("Arial", 14)
 ```
-Configure display box font family (Arial) and font size (14) for longer characters.
-
+#### DISPLAY_CHAR_LIMIT
+Limit of characters in the calculator display box.
 ```python
 DISPLAY_CHAR_LIMIT = 20
 ```
-Limit of characters in the calculator display box.
 
 ### Xcalc Variables
 
