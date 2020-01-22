@@ -1,5 +1,5 @@
 # Xcalc - Simple Calculator with Python GUI (TK)
-Simple Calculator with Python GUI (TK) is a vanity Python project I developed. It should enable you do basic calculation such as addition, subtraction, multiplication and division, but should it fail, just know it's my first Python GUI program.
+Simple Calculator with Python GUI (TK) is [my vanity Python project](http://www.eobasi.com/first-python-gui-progam-xcalc). It should enable you do basic calculation such as addition, subtraction, multiplication and division, but should it fail, just know it's my first Python GUI program.
 
 See my motivation here >> http://www.eobasi.com/first-python-gui-progam-xcalc
 
@@ -192,6 +192,8 @@ You can use `#!/usr/bin/env python3` for portability across different systems in
 
 ### Python Tkinter GUI Toolkit
 
+`sudo apt install python3-tk`
+
 [Tkinter](https://en.wikipedia.org/wiki/Tkinter) is Python's de facto standard GUI. We are going to import the module into our Python program to create interactive graphic user interface for our calculator.
 
 ```python
@@ -199,3 +201,52 @@ import tkinter
 import tkinter.messagebox
 ```
 The `import` keyword is used to import a module in Python. We have imported `tkinter` and `tkinter.messagebox` into our program. If you are running Python3 on Ubuntu and tkinter is not installed, run the following command in your terminal: `sudo apt-get install python3-tk`
+
+```python
+box = tkinter.Tk()
+...
+box.mainloop()
+```
+`box = tkinter.Tk()` initialize the TK module. This allows us to use TK functions within our program.
+
+### Configure Xcalc
+```python
+WIN_WIDTH = 360
+WIN_HEIGHT = 420
+
+NUM_COLUMN_COUNT = 3
+OPERATOR_COLUMN_COUNT = 3
+
+BTN_WIDTH = 4
+BTN_HEIGTH = 3
+BTN_FONT = ("Arial", 14)
+
+DISPLAY_HEIGHT = 3
+DISPLAY_WIDTH = 20
+DISPLAY_FONT = ("Arial", 18)
+DISPLAY_SM_FONT = ("Arial", 14)
+
+DISPLAY_CHAR_LIMIT = 20
+```
+The use of variables within Xcalc functions means that you can customize the calculator properties without edition the code functions.
+
+```python
+WIN_WIDTH = 360
+```
+Set calculator window width.
+
+```python
+WIN_HEIGHT = 420
+```
+
+Set calculator window height.
+```python
+NUM_COLUMN_COUNT = 3
+```
+Configure number of buttons per row on the numbers column.
+
+Set calculator window height.
+```python
+OPERATOR_COLUMN_COUNT = 3
+```
+Configure number of buttons per row on the operator column.
