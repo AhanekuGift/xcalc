@@ -317,3 +317,39 @@ The `numpad` constant list numbers from 1-9-0 and dot (.) as the last item on th
 * Multiplication (`*`)
 * Equals (=)
 * Using the floor operator (`//`) in the calculator will display the remainder of a number devided by another number.
+
+### Xcalc Functions
+If you are new to python, a function is defined like this:
+
+```python
+def myFunc( param )
+    //some function code goes here
+    //more function codes
+    //return statement
+```
+
+#### winDocument()
+Create new window object. See usage below:
+
+**winDocument() Usage**
+```python
+win = winDocument(params={
+    "title": "Sample Document::Simple Calculator",
+    "content": "Some content here for new window document",
+    "minwidth": 400
+    "minheight": 400
+})
+```
+
+**In Xcalc program**
+```python
+command=lambda: winDocument(params={
+        "title": "About...",
+        "content": "Simple Calculator (xcalc) is a vanity python project by Ebenezer Obasi (www.eobasi.com). It should enable you do basic calculation such as addition, substraction, multiplication and division, but should it fail, just know it's my first Python GUI program.\
+        \n\nTips:\n - Use ** operator to get the power of a number.\n- Use // operator to get the floor of numbers divided.\
+        \n\nFeel free to contact me anytime at info@eobasi.com"
+    })
+```
+#### menubar()
+
+#### btnCallBack()
