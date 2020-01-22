@@ -344,11 +344,11 @@ win = winDocument(params={
 **In Xcalc program**
 ```python
 command=lambda: winDocument(params={
-        "title": "About...",
-        "content": "Simple Calculator (xcalc) is a vanity python project by Ebenezer Obasi (www.eobasi.com). It should enable you do basic calculation such as addition, substraction, multiplication and division, but should it fail, just know it's my first Python GUI program.\
-        \n\nTips:\n - Use ** operator to get the power of a number.\n- Use // operator to get the floor of numbers divided.\
-        \n\nFeel free to contact me anytime at info@eobasi.com"
-    })
+    "title": "About...",
+    "content": "Simple Calculator (xcalc) is a vanity python project by Ebenezer Obasi (www.eobasi.com). It should enable you do basic calculation such as addition, substraction, multiplication and division, but should it fail, just know it's my first Python GUI program.\
+    \n\nTips:\n - Use ** operator to get the power of a number.\n- Use // operator to get the floor of numbers divided.\
+    \n\nFeel free to contact me anytime at info@eobasi.com"
+})
 ```
 #### menubar()
 
